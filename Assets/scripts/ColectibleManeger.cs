@@ -1,7 +1,7 @@
 
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class ColectibleManager : MonoBehaviour
 {
     public static ColectibleManager instance;
@@ -25,7 +25,11 @@ public class ColectibleManager : MonoBehaviour
     {
         if (coinText != null)
         {
-            coinText.text = "Collected: " + coins;
+            coinText.text = "Collected: " + coins + " / 5";
+            if (coins >= 5)
+            {
+                SceneManager.LoadScene("level2");
+            }
         }
     }
 }
