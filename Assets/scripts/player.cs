@@ -36,11 +36,11 @@ public class player : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            moveSpeed = 20f; // Sprinting speed
+            moveSpeed = 30f; // Sprinting speed
         }
         else
         {
-            moveSpeed = 5f; // Normal speed
+            moveSpeed = 15f; // Normal speed
         }
 
         Vector3 movement = (forward * z + right * x).normalized;
