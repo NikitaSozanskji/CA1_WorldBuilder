@@ -55,7 +55,7 @@ public class player : MonoBehaviour
             
         );
 
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)|| Input.GetKeyDown(KeyCode.W)) 
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)|| Input.GetKeyDown(KeyCode.W) && isGrounded) 
         {
             AudioSource.PlayClipAtPoint(Walk, transform.position);
         }
