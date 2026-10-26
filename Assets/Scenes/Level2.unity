@@ -2352,6 +2352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b1bfeb42c312a4ca9fee56ec699ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  Walk: {fileID: 0}
   moveSpeed: 5
   jumpForce: 5
   camera: {fileID: 759888322}
@@ -5770,7 +5771,7 @@ Terrain:
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: c7347e32cb0222540a22ba28172a714d, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
