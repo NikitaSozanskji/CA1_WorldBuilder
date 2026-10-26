@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
+    public AudioClip Walk;
     public float moveSpeed;
     public float jumpForce = 7f;
 
@@ -51,7 +52,13 @@ public class player : MonoBehaviour
             movement.x * moveSpeed,
             velocity.y,
             movement.z * moveSpeed
+            
         );
+
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)|| Input.GetKeyDown(KeyCode.W)) 
+        {
+            AudioSource.PlayClipAtPoint(Walk, transform.position);
+        }
 
         // Jump
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
